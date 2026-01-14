@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONFIA | Automação, Desenvolvimento, CRM e API Oficial</title>
-    <meta name="description" content="Escale sua operação sem bloqueios com Kommo CRM, N8N e API Oficial da Meta. Inscreva-se no treinamento.">
-    
+
+    <meta name="description"
+        content="Escale sua operação sem bloqueios com Kommo CRM, N8N e API Oficial da Meta. Inscreva-se no treinamento.">
+    <meta name="description"
+        content="Blindagem de operações comerciais com Kommo CRM, N8N e API Oficial Meta. Pare de perder vendas por bloqueios e escale com infraestrutura real.">
+    <meta name="keywords"
+        content="Kommo CRM, N8N, API Oficial WhatsApp, Automação de Vendas, API Meta, CRM para empresas">
+    <meta name="author" content="KONFIA">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://konfia.com.br/">
+    <meta property="og:title" content="KONFIA | Automação & Inteligência Empresarial">
+    <meta property="og:description"
+        content="Sua operação de vendas é um castelo de cartas ou uma infraestrutura resiliente? KONFIA que dá certo.">
+    <meta property="og:image" content="https://konfia.com.br">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://konfia.com.br/">
+    <meta property="twitter:title" content="KONFIA | Automação & Inteligência Empresarial">
+    <meta property="twitter:description" content="Blindagem de operações comerciais e automação de alta performance.">
+    <meta property="twitter:image" content="https://konfia.com.br">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <script>
@@ -38,26 +59,41 @@
         }
     </script>
     <style>
-        .hero-bg { background: radial-gradient(circle at top right, #1e3a8a 0%, #0f172a 40%); }
-        .glow-text { text-shadow: 0 0 20px rgba(45, 212, 191, 0.3); }
-        
+        .hero-bg {
+            background: radial-gradient(circle at top right, #1e3a8a 0%, #0f172a 40%);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 20px rgba(45, 212, 191, 0.3);
+        }
+
         /* Ajuste para evitar zoom automático em inputs no iOS */
-        input, select, textarea { font-size: 16px !important; }
+        input,
+        select,
+        textarea {
+            font-size: 16px !important;
+        }
     </style>
 </head>
-<body class="bg-konfia-dark text-gray-100 font-sans antialiased selection:bg-konfia-primary selection:text-white overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 bg-konfia-dark/95 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
+<body
+    class="bg-konfia-dark text-gray-100 font-sans antialiased selection:bg-konfia-primary selection:text-white overflow-x-hidden">
+
+    <nav
+        class="fixed w-full z-50 bg-konfia-dark/95 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center flex-shrink-0">
                     <span class="text-2xl font-extrabold tracking-tighter text-white">KONF I.A</span>
                 </div>
-                
+
                 <div class="hidden lg:flex space-x-8 items-center">
-                    <a href="#solucoes" class="text-gray-300 hover:text-white transition text-sm font-medium">Soluções</a>
-                    <a href="#api-meta" class="text-gray-300 hover:text-white transition text-sm font-medium">API Meta</a>
-                    <a href="#treinamento" class="px-5 py-2 rounded-full bg-konfia-primary hover:bg-blue-600 text-white font-semibold transition shadow-lg shadow-blue-900/50 text-sm">
+                    <a href="#solucoes"
+                        class="text-gray-300 hover:text-white transition text-sm font-medium">Soluções</a>
+                    <a href="#api-meta" class="text-gray-300 hover:text-white transition text-sm font-medium">API
+                        Meta</a>
+                    <a href="#treinamento"
+                        class="px-5 py-2 rounded-full bg-konfia-primary hover:bg-blue-600 text-white font-semibold transition shadow-lg shadow-blue-900/50 text-sm">
                         Inscrever-se
                     </a>
                 </div>
@@ -70,11 +106,16 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-konfia-surface border-b border-gray-700 absolute w-full left-0 top-20 shadow-2xl">
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-konfia-surface border-b border-gray-700 absolute w-full left-0 top-20 shadow-2xl">
             <div class="px-4 pt-4 pb-6 space-y-4 flex flex-col">
-                <a href="#solucoes" class="mobile-link text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Soluções</a>
-                <a href="#api-meta" class="mobile-link text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">API Meta</a>
-                <a href="#treinamento" class="mobile-link w-full text-center mt-4 px-5 py-3 rounded-lg bg-konfia-primary text-white font-bold block">
+                <a href="#solucoes"
+                    class="mobile-link text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Soluções</a>
+                <a href="#api-meta"
+                    class="mobile-link text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">API
+                    Meta</a>
+                <a href="#treinamento"
+                    class="mobile-link w-full text-center mt-4 px-5 py-3 rounded-lg bg-konfia-primary text-white font-bold block">
                     Inscrever-se agora
                 </a>
             </div>
@@ -83,61 +124,77 @@
 
     <section class="hero-bg pt-32 pb-16 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-4 overflow-hidden relative">
         <div class="max-w-7xl mx-auto text-center relative z-10">
-            <div class="inline-block mb-4 px-4 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-300 text-xs md:text-sm font-semibold">
+            <div
+                class="inline-block mb-4 px-4 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-300 text-xs md:text-sm font-semibold">
                 🚀 Especialistas em Automação B2B
             </div>
             <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                 Automação, Integrações e <br class="hidden md:block">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-konfia-accent glow-text">API Oficial Meta</span>
+                <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-konfia-accent glow-text">API
+                    Oficial Meta</span>
             </h1>
             <p class="text-base sm:text-lg md:text-xl text-gray-400 mb-8 md:mb-10 max-w-3xl mx-auto px-2">
-                <span class="text-konfia-accent">Pare de perder vendas por chips banidos.</span> </br>O lead não espera a troca do seu chip. Se a automação falha no primeiro contato, o churn acontece antes mesmo da primeira venda. 
+                <span class="text-konfia-accent">Pare de perder vendas por chips banidos.</span> </br>O lead não espera
+                a troca do seu chip. Se a automação falha no primeiro contato, o churn acontece antes mesmo da primeira
+                venda.
             </p>
-            
+
             <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto px-4 sm:px-0">
                 <!-- <a href="https://wa.me/seu-numero" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-lg border border-gray-600 hover:bg-gray-800 transition text-white font-semibold flex items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp"></i> Falar com especialista
                 </a> -->
-                <a href="#treinamento" class="w-full sm:w-auto px-8 py-4 rounded-lg bg-konfia-accent text-konfia-dark hover:bg-teal-300 transition font-bold shadow-[0_0_20px_rgba(45,212,191,0.4)] flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-calendar-check"></i> Clique aqui e inscreva-se agora para o Workshop, não fique de fora dessa!
+                <a href="#treinamento"
+                    class="w-full sm:w-auto px-8 py-4 rounded-lg bg-konfia-accent text-konfia-dark hover:bg-teal-300 transition font-bold shadow-[0_0_20px_rgba(45,212,191,0.4)] flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i> Clique aqui e inscreva-se agora para o Workshop, não
+                    fique de fora dessa!
                 </a>
             </div>
         </div>
-        
-        <div class="absolute top-1/4 left-[-50px] md:left-0 w-48 md:w-64 h-48 md:h-64 bg-blue-600/10 rounded-full blur-3xl -z-0"></div>
-        <div class="absolute bottom-0 right-[-50px] md:right-0 w-64 md:w-96 h-64 md:h-96 bg-teal-500/10 rounded-full blur-3xl -z-0"></div>
+
+        <div
+            class="absolute top-1/4 left-[-50px] md:left-0 w-48 md:w-64 h-48 md:h-64 bg-blue-600/10 rounded-full blur-3xl -z-0">
+        </div>
+        <div
+            class="absolute bottom-0 right-[-50px] md:right-0 w-64 md:w-96 h-64 md:h-96 bg-teal-500/10 rounded-full blur-3xl -z-0">
+        </div>
     </section>
 
     <section class="py-16 md:py-20 bg-konfia-surface border-y border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-4xl font-bold mb-4 px-2">Cansado de ter problemas que fazem sua operação parar?</h2>
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 px-2">Cansado de ter problemas que fazem sua operação
+                    parar?</h2>
                 <p class="text-gray-400 text-sm md:text-base">O custo invisível da instabilidade técnica...</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                <div class="p-6 bg-konfia-dark rounded-xl border border-red-900/50 hover:border-red-500 transition group">
+                <div
+                    class="p-6 bg-konfia-dark rounded-xl border border-red-900/50 hover:border-red-500 transition group">
                     <div class="w-12 h-12 bg-red-900/20 rounded-lg flex items-center justify-center mb-4">
                         <i class="fa-solid fa-ban text-red-500 text-xl"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2">Chips Banidos</h3>
                     <p class="text-gray-400 text-sm">Perda constante de números e histórico.</p>
                 </div>
-                <div class="p-6 bg-konfia-dark rounded-xl border border-gray-800 hover:border-gray-600 transition group">
+                <div
+                    class="p-6 bg-konfia-dark rounded-xl border border-gray-800 hover:border-gray-600 transition group">
                     <div class="w-12 h-12 bg-orange-900/20 rounded-lg flex items-center justify-center mb-4">
                         <i class="fa-solid fa-triangle-exclamation text-orange-500 text-xl"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2">Operação Interrompida</h3>
                     <p class="text-gray-400 text-sm">Vendas paradas por instabilidade.</p>
                 </div>
-                <div class="p-6 bg-konfia-dark rounded-xl border border-gray-800 hover:border-gray-600 transition group">
+                <div
+                    class="p-6 bg-konfia-dark rounded-xl border border-gray-800 hover:border-gray-600 transition group">
                     <div class="w-12 h-12 bg-yellow-900/20 rounded-lg flex items-center justify-center mb-4">
                         <i class="fa-solid fa-cogs text-yellow-500 text-xl"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2">Processo Manual</h3>
                     <p class="text-gray-400 text-sm">Equipe perdendo tempo sem automação.</p>
                 </div>
-                <div class="p-6 bg-konfia-dark rounded-xl border border-gray-800 hover:border-gray-600 transition group">
+                <div
+                    class="p-6 bg-konfia-dark rounded-xl border border-gray-800 hover:border-gray-600 transition group">
                     <div class="w-12 h-12 bg-blue-900/20 rounded-lg flex items-center justify-center mb-4">
                         <i class="fa-solid fa-bug text-blue-500 text-xl"></i>
                     </div>
@@ -151,27 +208,38 @@
     <section id="solucoes" class="py-16 md:py-20 bg-konfia-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
-                <span class="text-konfia-accent font-semibold tracking-wider text-xs md:text-sm uppercase">Nós entregamos</span>
+                <span class="text-konfia-accent font-semibold tracking-wider text-xs md:text-sm uppercase">Nós
+                    entregamos</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-2">Soluções Avançadas em:</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl border border-gray-700 hover:shadow-2xl transition">
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl border border-gray-700 hover:shadow-2xl transition">
                     <div class="mb-6"><i class="fa-solid fa-key text-4xl text-blue-500"></i></div>
                     <h3 class="text-xl md:text-2xl font-bold mb-4">Arquitetura Estratégica de CRM</h3>
-                    <p class="text-gray-400 text-sm md:text-base">Construímos um ativo de vendas, com hierarquia de acesso e funis personalizados para que nenhum lead seja esquecido e sua empresa maximize o potencial com o uso do CRM.</p>
+                    <p class="text-gray-400 text-sm md:text-base">Construímos um ativo de vendas, com hierarquia de
+                        acesso e funis personalizados para que nenhum lead seja esquecido e sua empresa maximize o
+                        potencial com o uso do CRM.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl border border-gray-700 hover:shadow-2xl transition">
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl border border-gray-700 hover:shadow-2xl transition">
                     <div class="mb-6"><i class="fa-solid fa-robot text-4xl text-konfia-accent"></i></div>
                     <h3 class="text-xl md:text-2xl font-bold mb-4">Bots Inteligentes</h3>
-                    <p class="text-gray-400 text-sm md:text-base">Desenvolvemos bots que pensam. Realize triagem automática, agendamento de reuniões e qualificação de leads 24/7 dentro do seu CRM. Seu time de vendas só recebe o "filé", pronto para fechar.</p>
+                    <p class="text-gray-400 text-sm md:text-base">Desenvolvemos bots que pensam. Realize triagem
+                        automática, agendamento de reuniões e qualificação de leads 24/7 dentro do seu CRM. Seu time de
+                        vendas só recebe o "filé", pronto para fechar.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl border border-gray-700 hover:shadow-2xl transition md:col-span-2 lg:col-span-1">
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl border border-gray-700 hover:shadow-2xl transition md:col-span-2 lg:col-span-1">
                     <div class="mb-6"><i class="fa-solid fa-network-wired text-4xl text-purple-500"></i></div>
                     <h3 class="text-xl md:text-2xl font-bold mb-4">N8N e Integrações</h3>
-                    <p class="text-gray-400 text-sm md:text-base">Onde outros param, nós avançamos. Conectamos seu CRM a fluxos de automação e Inteligência Artificial, criando sistemas que integram ERPs e bancos de dados. Desenvolvemos um ecossistema onde a otimizamos fluxos operacionais e reduzimos/aumentamos o lucro.</p>
+                    <p class="text-gray-400 text-sm md:text-base">Onde outros param, nós avançamos. Conectamos seu CRM a
+                        fluxos de automação e Inteligência Artificial, criando sistemas que integram ERPs e bancos de
+                        dados. Desenvolvemos um ecossistema onde a otimizamos fluxos operacionais e reduzimos/aumentamos
+                        o lucro.</p>
                 </div>
             </div>
         </div>
@@ -179,48 +247,58 @@
 
     <section id="api-meta" class="py-16 md:py-24 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-green-900/10 to-transparent z-0"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-            <div class="bg-gray-800/40 backdrop-blur-md border border-gray-700/50 rounded-[2rem] p-8 md:p-16 flex flex-col lg:flex-row items-center gap-12">
-                
+            <div
+                class="bg-gray-800/40 backdrop-blur-md border border-gray-700/50 rounded-[2rem] p-8 md:p-16 flex flex-col lg:flex-row items-center gap-12">
+
                 <div class="lg:w-3/5 order-2 lg:order-1">
-                    <div class="inline-block px-4 py-1 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-xs font-bold mb-6 tracking-widest uppercase">
+                    <div
+                        class="inline-block px-4 py-1 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-xs font-bold mb-6 tracking-widest uppercase">
                         Blindagem de Operação
                     </div>
-                    
+
                     <h2 class="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
                         Pare de construir seu negócio em <br class="hidden md:block">
                         <span class="text-green-500">terreno alugado.</span>
                     </h2>
-                    
+
                     <p class="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed">
-                        Enquanto você usa <span class="text-[#f17c5a]">"instâncias" ou APIs não oficiais</span>, sua operação está em contagem regressiva para o próximo banimento. <span class="text-konfia-accent">A API Oficial da Meta não é um gasto mas sim, a única infraestrutura</span> que garante que seu WhatsApp não vai cair no meio de um lançamento ou de um dia recorde de vendas.
+                        Enquanto você usa <span class="text-[#f17c5a]">"instâncias" ou APIs não oficiais</span>, sua
+                        operação está em contagem regressiva para o próximo banimento. <span
+                            class="text-konfia-accent">A API Oficial da Meta não é um gasto mas sim, a única
+                            infraestrutura</span> que garante que seu WhatsApp não vai cair no meio de um lançamento ou
+                        de um dia recorde de vendas.
                     </p>
-                    
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                         <div class="flex items-start gap-3">
-                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i class="fa-solid fa-shield text-green-500"></i></div>
+                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i
+                                    class="fa-solid fa-shield text-green-500"></i></div>
                             <div>
                                 <h4 class="font-bold text-white">Risco Zero de Ban</h4>
                                 <p class="text-sm text-gray-400">Total conformidade com as políticas da Meta.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i class="fa-solid fa-bolt text-green-500"></i></div>
+                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i
+                                    class="fa-solid fa-bolt text-green-500"></i></div>
                             <div>
                                 <h4 class="font-bold text-white">Disparos em Massa Reais</h4>
                                 <p class="text-sm text-gray-400">Envie milhares de mensagens sem medo de retenção.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i class="fa-solid fa-circle-check text-green-500"></i></div>
+                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i
+                                    class="fa-solid fa-circle-check text-green-500"></i></div>
                             <div>
                                 <h4 class="font-bold text-white">Selo de Verificado</h4>
                                 <p class="text-sm text-gray-400">Aumente a taxa de resposta com autoridade visual.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i class="fa-solid fa-chart-pie text-green-500"></i></div>
+                            <div class="mt-1 bg-green-500/20 p-1 rounded"><i
+                                    class="fa-solid fa-chart-pie text-green-500"></i></div>
                             <div>
                                 <h4 class="font-bold text-white">Métricas de Entrega</h4>
                                 <p class="text-sm text-gray-400">Saiba exatamente quem leu e quem clicou.</p>
@@ -228,16 +306,20 @@
                         </div>
                     </div>
 
-                    <a href="#treinamento" class="inline-flex items-center gap-3 text-green-400 font-bold hover:text-green-300 transition group">
-                        QUERO MIGRAR PARA A API OFICIAL <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    <a href="#treinamento"
+                        class="inline-flex items-center gap-3 text-green-400 font-bold hover:text-green-300 transition group">
+                        QUERO MIGRAR PARA A API OFICIAL <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
                     </a>
                 </div>
-                
+
                 <div class="lg:w-2/5 flex justify-center order-1 lg:order-2">
                     <div class="relative w-64 h-64 md:w-96 md:h-96">
                         <div class="absolute inset-0 bg-green-500/20 rounded-full blur-[80px] animate-pulse"></div>
-                        <div class="relative z-10 bg-gray-900/50 border border-white/5 w-full h-full rounded-full flex items-center justify-center backdrop-blur-sm">
-                            <i class="fa-brands fa-whatsapp text-[120px] md:text-[180px] text-green-500 drop-shadow-[0_0_30px_rgba(34,197,94,0.4)]"></i>
+                        <div
+                            class="relative z-10 bg-gray-900/50 border border-white/5 w-full h-full rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i
+                                class="fa-brands fa-whatsapp text-[120px] md:text-[180px] text-green-500 drop-shadow-[0_0_30px_rgba(34,197,94,0.4)]"></i>
                         </div>
                     </div>
                 </div>
@@ -274,12 +356,15 @@
 
     <section id="treinamento" class="py-16 md:py-24 bg-gradient-to-b from-konfia-dark to-blue-900/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 bg-konfia-surface rounded-3xl overflow-hidden shadow-2xl border border-gray-700">
-                
+            <div
+                class="flex flex-col lg:flex-row gap-8 lg:gap-12 bg-konfia-surface rounded-3xl overflow-hidden shadow-2xl border border-gray-700">
+
                 <div class="lg:w-1/2 p-6 md:p-10 lg:p-14 flex flex-col justify-center bg-gray-900/50">
                     <div class="mb-6 flex flex-wrap items-center gap-3">
-                        <span class="bg-red-600 text-white px-3 py-1 rounded text-sm font-bold animate-pulse">AO VIVO</span>
-                        <span class="text-blue-300 font-semibold text-sm md:text-base"><i class="fa-regular fa-calendar"></i> 20/10</span>
+                        <span class="bg-red-600 text-white px-3 py-1 rounded text-sm font-bold animate-pulse">AO
+                            VIVO</span>
+                        <span class="text-blue-300 font-semibold text-sm md:text-base"><i
+                                class="fa-regular fa-calendar"></i> 20/10</span>
                     </div>
                     <h2 class="text-2xl md:text-4xl font-bold mb-6 text-white">
                         Workshop sobre Integrações no Kommo CRM & Meta API Oficial
@@ -287,27 +372,35 @@
                     <p class="text-gray-400 mb-8 text-base md:text-lg">
                         Domine as configurações avançadas e aprenda a criar uma estrutura à prova de bloqueios.
                     </p>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="bg-blue-600/20 p-3 rounded-lg shrink-0"><i class="fa-solid fa-sliders text-blue-400"></i></div>
+                            <div class="bg-blue-600/20 p-3 rounded-lg shrink-0"><i
+                                    class="fa-solid fa-sliders text-blue-400"></i></div>
                             <div>
                                 <h4 class="font-bold text-white text-sm md:text-base">Configurações Avançadas</h4>
-                                <p class="text-xs md:text-sm text-gray-400">Setup completo de integração com a API da Meta no Kommo CRM + N8N.</p>
+                                <p class="text-xs md:text-sm text-gray-400">Setup completo de integração com a API da
+                                    Meta no Kommo CRM + N8N.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="bg-konfia-accent/20 p-3 rounded-lg shrink-0"><i class="fa-solid fa-shield-virus text-konfia-accent"></i></div>
+                            <div class="bg-konfia-accent/20 p-3 rounded-lg shrink-0"><i
+                                    class="fa-solid fa-shield-virus text-konfia-accent"></i></div>
                             <div>
                                 <h4 class="font-bold text-white text-sm md:text-base">Anti-Bloqueio</h4>
-                                <p class="text-xs md:text-sm text-gray-400">Migração e Configuração, criação de templates oficiais e boas práticas para o uso da API Oficial.</p>
+                                <p class="text-xs md:text-sm text-gray-400">Migração e Configuração, criação de
+                                    templates oficiais e boas práticas para o uso da API Oficial.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="bg-gradient-to-t p-3 rounded-lg shrink-0"><i class="fa-solid fa-people-group text-white"></i></div>
+                            <div class="bg-gradient-to-t p-3 rounded-lg shrink-0"><i
+                                    class="fa-solid fa-people-group text-white"></i></div>
                             <div>
-                                <h4 class="font-bold text-white text-sm md:text-base">Especialistas que desenvolvem Negócios</h4>
-                                <p class="text-xs md:text-sm text-gray-400">Unimos a precisão dos desenvolvedores com a visão estratégica dos CEOs. Assuntos técnicos resolvidos com uma linguagem clara: foco em uptime e lucro.</p>
+                                <h4 class="font-bold text-white text-sm md:text-base">Especialistas que desenvolvem
+                                    Negócios</h4>
+                                <p class="text-xs md:text-sm text-gray-400">Unimos a precisão dos desenvolvedores com a
+                                    visão estratégica dos CEOs. Assuntos técnicos resolvidos com uma linguagem clara:
+                                    foco em uptime e lucro.</p>
                             </div>
                         </div>
                     </div>
@@ -317,49 +410,57 @@
                     <div id="form-container">
                         <h3 class="text-2xl font-bold text-white mb-2">Garanta sua vaga</h3>
                         <p class="text-gray-400 mb-6 text-sm">Preencha os dados abaixo.</p>
-                        
+
                         <form id="trainingForm" class="space-y-4">
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-1">Nome Completo *</label>
-                                <input type="text" id="nome" required class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
+                                <input type="text" id="nome" required
+                                    class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
                             </div>
 
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-1">E-mail *</label>
-                                <input type="email" id="email" required class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
+                                <input type="email" id="email" required
+                                    class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
                             </div>
 
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-1">WhatsApp *</label>
-                                <input type="tel" id="whatsapp" required class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
+                                <input type="tel" id="whatsapp" required
+                                    class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
                             </div>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-1">Empresa</label>
-                                    <input type="text" id="empresa" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
+                                    <input type="text" id="empresa"
+                                        class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-1">Cargo</label>
-                                    <input type="text" id="cargo" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
+                                    <input type="text" id="cargo"
+                                        class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-konfia-primary outline-none text-base">
                                 </div>
                             </div>
 
-                            <button type="submit" id="submitBtn" class="w-full bg-konfia-primary hover:bg-blue-600 text-white font-bold py-4 rounded-lg shadow-lg transition transform active:scale-95 mt-2 text-base">
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-konfia-primary hover:bg-blue-600 text-white font-bold py-4 rounded-lg shadow-lg transition transform active:scale-95 mt-2 text-base">
                                 Inscrever-se no treinamento
                             </button>
                         </form>
                     </div>
 
-                    <div id="success-message" class="hidden h-full flex flex-col justify-center items-center text-center py-10">
+                    <div id="success-message"
+                        class="hidden h-full flex flex-col justify-center items-center text-center py-10">
                         <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6">
                             <i class="fa-solid fa-check text-3xl text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">Inscrição Confirmada!</h3>
                         <p class="text-gray-300 mb-6">Enviamos os detalhes para o seu WhatsApp.</p>
                     </div>
-                    
-                    <div id="error-message" class="hidden text-center mt-4 p-4 bg-red-900/30 border border-red-500 rounded-lg text-red-200">
+
+                    <div id="error-message"
+                        class="hidden text-center mt-4 p-4 bg-red-900/30 border border-red-500 rounded-lg text-red-200">
                         Erro ao enviar. Tente novamente.
                     </div>
                 </div>
@@ -371,8 +472,8 @@
         <div class="max-w-7xl mx-auto px-4 text-center flex flex-col items-center">
             <span class="text-2xl font-extrabold text-white mb-2">KONF I.A</span>
             <p class="text-gray-500 text-sm">Automação • Desenvolvimento • Fluxos low/no-code • API Oficial Meta</p>
-            <p class="text-gray-600 text-xs mt-4">&copy; 2024 - Todos os direitos reservados. 
-            </br>Automação & Inteligência Empresarial para transformar processos e impulsionar negócios.</p>
+            <p class="text-gray-600 text-xs mt-4">&copy; 2024 - Todos os direitos reservados.
+                </br>Automação & Inteligência Empresarial para transformar processos e impulsionar negócios.</p>
         </div>
     </footer>
 
@@ -394,13 +495,13 @@
         });
 
         // 2. Integração do Formulário
-        document.getElementById('trainingForm').addEventListener('submit', function(e) {
+        document.getElementById('trainingForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const btn = document.getElementById('submitBtn');
             const originalBtnText = btn.innerHTML;
             const errorMessage = document.getElementById('error-message');
-            
+
             btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Enviando...';
             btn.disabled = true;
             btn.classList.add('opacity-75', 'cursor-not-allowed');
@@ -420,20 +521,20 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
             })
-            .then(response => {
-                if (response.ok || response.status === 0 || response.type === 'opaque') {
-                    showSuccess();
-                } else {
-                    throw new Error('Erro na requisição');
-                }
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-                errorMessage.classList.remove('hidden');
-                btn.innerHTML = originalBtnText;
-                btn.disabled = false;
-                btn.classList.remove('opacity-75', 'cursor-not-allowed');
-            });
+                .then(response => {
+                    if (response.ok || response.status === 0 || response.type === 'opaque') {
+                        showSuccess();
+                    } else {
+                        throw new Error('Erro na requisição');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    errorMessage.classList.remove('hidden');
+                    btn.innerHTML = originalBtnText;
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-75', 'cursor-not-allowed');
+                });
 
             function showSuccess() {
                 document.getElementById('form-container').style.display = 'none';
@@ -443,4 +544,5 @@
         });
     </script>
 </body>
+
 </html>
